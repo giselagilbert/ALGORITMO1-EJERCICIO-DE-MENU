@@ -1,0 +1,74 @@
+#include "stdlib.h"
+#include "stdio.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+
+void main ()
+{ float lado, area, mayor;
+  float n1, n2, n3, promedio;
+  float A, B; 
+  int opc;
+
+
+  do
+  {        
+	       cout<<endl<< " *** MENU PRINCIPAL *** ";
+           cout<<endl<< "  1 --->  Area del triangulo ";
+	       cout<<endl<< "  2 --->  Promedio de 3 numeros ";
+	       cout<<endl<< "  3 --->  Mayor de dos numeros ";
+	       cout<<endl<< "  0 --->  SALIR ";
+		   cout<<endl<<  " SELECCIONE UNA OPCION ";
+		   cin>> opc;
+	 
+	switch (opc)
+	{
+	case 1: 
+		cout<< "ingrese el lado del cuadrado:  ";
+		cin>> lado;
+		area= lado * lado;
+		cout<< " el area del cuadrado es:  "<<area;
+		break;
+
+	case 2: 
+		cout<< "ingrese primero numero:  ";
+		cin>> n1;
+		cout<< "ingrese segundo numero:  ";
+		cin>> n2;
+		cout<< "ingrese tercer numero:  ";
+		cin>> n3;
+		promedio= (n1+n2+n3)/3;
+		cout<< "el promedio de los 3 numeros es:  "<<promedio;
+		break;
+
+	case 3:
+		cout<< "ingrese primer numero:  ";
+		cin>> A;
+		cout<< "ingrese el segundo numero:  ";
+		cin>> B;
+		if (A > B)
+			{mayor = A;
+		cout<< "el numero mayor es:  "<<A;
+		}
+		else 
+			{mayor = B;
+		cout<< "el numero mayor es:  "<<B;
+		}
+		break;
+
+	case 0:
+		cout<< "SALIR";
+		break;
+		
+	default:
+		cout<< "opcion invalida";
+		break;
+
+	}
+	getch();
+	system ("cls");
+  }while (opc != 0);
+  
+
+}
