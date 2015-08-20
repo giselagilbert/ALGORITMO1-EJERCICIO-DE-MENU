@@ -1,0 +1,26 @@
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include <iostream>
+#include "math.h"
+
+
+float area_circulo (float R);
+using namespace std;
+
+void mainm  ()
+{ float Radio, area;
+  cout<< "Ingrese el radio del circulo: ";
+  cin>> Radio;
+
+  area= area_circulo (Radio);
+  cout<< "El area del circulo es: "<< area;
+  getch();
+}
+
+float area_circulo (float R)
+{ float area, pi;
+  pi= 3.141516;
+  area= pi * (R*R);
+  return area;
+}
