@@ -19,7 +19,7 @@ void main ()
   if (discriminante (A,B,C) > 0)
      { cuadratica (A, B, C, X1, X2);
        cout<< " El valor de X1 es:  "<< X1;
-	   cout<< " EL valor de X2 es X2"<< X2;
+       cout<< " EL valor de X2 es:  "<< X2;
      }
   else 
      { cout<< "La discriminante no es REAL  ";
